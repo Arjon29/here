@@ -1,0 +1,209 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .container2 {
+        float: right;
+        height: 25px;
+        width: 40px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        cursor: pointer;
+    }
+    
+    .menuLogo {
+        height: 3px;
+        width: 30px;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .menu {
+        width: 100%;
+        height: 60vh;
+        background-color: rgb(255, 255, 255);
+        padding: 50px 50px 50px 10px;
+        display: none;
+        transition: 0.5s;
+    }
+    
+    .menu li {
+        list-style-type: none;
+        padding: 10px 0;
+        text-align: left;
+    }
+    
+    .showmenu {
+        display: block;
+        transform: translateY(60px);
+    }
+    
+    .menu li:last-child {
+        border-bottom: none;
+    }
+    
+    .menu li:first-child a {
+        font-weight: bold;
+    }
+    
+    .menu li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+        transition: font-weight 0.2s;
+    }
+    
+    .menu li a:hover {
+        font-weight: bold;
+    }
+    
+    @media screen and (min-width: 1000px) {
+        .menu {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .menu li a {
+            font-size: 16px;
+        }
+    }
+    
+    .carousel-item img {
+        height: 50vh;
+        object-fit: cover;
+    }
+    
+    .formulaire-containt {
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .formulaire-containt form {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .element-containt {
+        display: grid;
+        grid-template-columns: 4fr 7fr;
+        grid-gap: 1em;
+        margin-bottom: 5em;
+    }
+    
+    .resultat {
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .element-containt {
+            display: flex;
+            flex-direction: row;
+        }
+        .element-containt p {
+            display: none;
+        }
+        .element-containt h5 {
+            display: none;
+        }
+        .card-body {
+            display: flex;
+            align-items: flex-end;
+        }
+        button {
+            size: 200px;
+        }
+    }
+    
+    main {
+        margin-top: 1em;
+    }
+    
+    .main-item-1 img {
+        height: 200px;
+        width: 150px;
+        object-fit: contain;
+    }
+    
+    .elem2 {
+        /* background-color: gray; */
+        color: rgb(0, 0, 0);
+        padding: 1em;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .element-containt {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    
+    .les-Prix {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .bienvenue {
+        color: white;
+        position: absolute;
+        z-index: 1;
+        top: 1em;
+        left: 38em;
+        text-align: center;
+    }
+    
+    .agencePhoto {
+        display: flex;
+        justify-content: center;
+        border-style: none;
+    }
+    
+    .loni {
+        top: 20em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 5em;
+        width: 50%;
+        background: rgba(133, 133, 133, 0.6);
+        color: white;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .loni {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5em;
+            width: 90%;
+            top: 7em;
+            background: rgba(133, 133, 133, 0.6);
+            color: white;
+        }
+    }
+    
+    .loni button {
+        background: rgba(0, 97, 13, 0.3);
+    }
+    
+    .loni .form-control {
+        background: rgba(112, 112, 112, 0.6);
+    }
+    /* @media screen and (max-width: 800px) {
+    .formulaire-containt form div {
+        margin: 1rem 0px;
+    }
+} */
